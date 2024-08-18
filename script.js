@@ -82,7 +82,7 @@ btn.addEventListener("click",(evt)=>{
     const toCurrency = Object.keys(countryList).find(key => countryList[key] === toCountry);
   
     // console.log(fromDropdown.value)
-    if(amountValue === "" || amountValue < 0){
+    if(amountValue === ""){
         amountValue=1;
         
     }
