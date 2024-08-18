@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=13013&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 1rem;
+            background-color: rgb(200, 235, 132);
+        }
+
+        .container{
+            background-color: antiquewhite;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 0 1rem black;
+        }
+        .app-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        .heading{
+            text-align: center;
+        }
+        .amt-box{
+            width: 100%;
+            margin-top: 1rem ;
+            font-size: larger;
+            text-align: center;
+        }
+        .amt-box input{
+            font-size: large;
+            padding-left: .5rem;
+            outline: none;
+            
+            padding: 1rem 1rem;
+        }
+        .container input,button{
+            width: 100%;
+            border: none;
+            height: 2rem;
+            border-radius: 1.5rem;
+        }
+        .select-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 2rem 0;
+            
+        }
+        .from-box, .to-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: .5rem;
+            
+
+        }
+        select{
+            font-size: large ;
+            border-radius: .8rem;
+            background: none;
+            color: black;
+            border: none;
+        }
+
+        button{
+            font-size: larger;
+            font-weight: bold;
+            background-color: rgb(196, 126, 196);
+            color: white;
+            box-shadow: 0 0 .3rem black;
+            border: 1px solid black;
+            height: 3rem;
+        }
+        .result{
+            margin-top: 1rem;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="app-box">
+            <div class="heading">
+                <h1>Currency Ratio Finder</h1>
+            </div>
+            <div class="amt-box">
+                <p>Enter Amount:-</p>
+                <input type="text" class="amount">
+            </div>
+            <div class="select-box">
+                <div class="from-box">
+                    <select name="from" id="from">
+                        
+                    </select>
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="Image error" class="flag1">
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to-box">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="Image error" class="flag2">
+                    <select name="to" id="to">
+                        
+                    </select>
+                    
+                </div>
+            </div>
+            <button class="button">Get Ratio</button>
+            <p class="result">1 USD = 88.542 INR</p>
+        </form>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+<script   src="codes.js"></script>
+</html>
